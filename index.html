@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Predictive Battery Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">POWER<span>AI</span></div>
+    <div>
+      <h1>Battery Intelligence Dashboard</h1>
+      <p>Predictive Battery Health &amp; Degradation Analysis</p>
+    </div>
+    <div class="status"><span></span> Research Dashboard</div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <p class="eyebrow">BATTERY ANALYTICS</p>
+        <h2>Monitor. Analyze. Predict.</h2>
+        <p>Explore historical battery experiments and model-based health analysis.</p>
+      </div>
+      <div class="chip">NASA research dataset</div>
+    </section>
+
+    <section class="notice">
+      <strong>Data status:</strong>
+      <span id="dataStatus">Waiting for backend connection</span>
+    </section>
+
+    <section class="metrics">
+      <article class="card">
+        <p class="metric-label">Battery Health (SOH)</p>
+        <h3 id="health">Not available</h3>
+        <p class="muted">Requires processed data and model</p>
+      </article>
+      <article class="card">
+        <p class="metric-label">Remaining Useful Life</p>
+        <h3 id="rul">Not available</h3>
+        <p class="muted">Requires a validated RUL model</p>
+      </article>
+      <article class="card">
+        <p class="metric-label">Anomaly Status</p>
+        <h3 id="anomaly">Not analyzed</h3>
+        <p class="muted">Requires anomaly analysis</p>
+      </article>
+    </section>
+
+    <section class="card analysis">
+      <div>
+        <p class="eyebrow">EXPERIMENT SELECTION</p>
+        <h2>Analyze a battery</h2>
+        <p class="muted">Choose a battery from the NASA dataset.</p>
+      </div>
+      <div class="controls">
+        <label for="battery">Battery ID</label>
+        <select id="battery">
+          <option value="B0005">B0005</option>
+          <option value="B0006">B0006</option>
+          <option value="B0007">B0007</option>
+          <option value="B0018">B0018</option>
+        </select>
+        <button id="analyze">Check analysis</button>
+      </div>
+      <p id="message" role="status">Connect the backend to check available analysis.</p>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">PROJECT INFORMATION</p>
+      <h2>How this dashboard works</h2>
+      <div class="info-grid">
+        <div><strong>01. Dataset</strong><p>Historical NASA battery experiment data.</p></div>
+        <div><strong>02. Processing</strong><p>Extract and prepare measured battery features.</p></div>
+        <div><strong>03. Machine learning</strong><p>Estimate battery health only after model validation.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>AI Predictive BMS · Academic project · Historical data, not live hardware readings</footer>
+  <script src="script.js"></script>
+</body>
+</html>
